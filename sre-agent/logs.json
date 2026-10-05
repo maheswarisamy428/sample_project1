@@ -1,0 +1,20 @@
+[
+  {
+    "timestamp": "2026-10-05T09:00:00Z",
+    "service": "deployment",
+    "level": "INFO",
+    "message": "Deployment started successfully"
+  },
+  {
+    "timestamp": "2026-10-05T09:02:00Z",
+    "service": "deployment",
+    "level": "ERROR",
+    "message": "Deployment failed: image pull returned unauthorized"
+  },
+  {
+    "timestamp": "2026-10-05T09:03:00Z",
+    "service": "api",
+    "level": "WARN",
+    "message": "API readiness probe failed after deployment"
+  }
+]
