@@ -114,8 +114,6 @@ jobs:
 
   build:
     name: Build container 
-    needs:
-      - terraform_security
 
     runs-on: ubuntu-latest
 
