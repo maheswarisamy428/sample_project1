@@ -11,4 +11,3 @@ def health():
 @app.get("/")
 def home():
     return {"message": "DevSecOps AI Service"}
-

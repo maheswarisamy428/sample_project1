@@ -1,4 +1,4 @@
-from fastapi.testclient import TestClient
+from fastapi.testclient import TestClient  # type: ignore[import-not-found]
 
 from app.main import app
 
