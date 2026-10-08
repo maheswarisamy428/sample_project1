@@ -1,0 +1,12 @@
+rules:
+  - id: avoid-hardcoded-secret
+    languages:
+      - python
+    message: "Possible hardcoded secret detected. Use environment variables or a secret manager."
+    severity: ERROR
+    patterns:
+      - pattern: $KEY = "..."
+      - metavariable-regex:
+          metavariable: $KEY
+          regex: "(?i)(password|passwd|secret|api_key|apikey|token)"
+          
